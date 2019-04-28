@@ -1,0 +1,19 @@
+.bgimage-color{
+    background-color: rgb(37, 41, 52)
+}
+.navicon-size{
+    height:24px;
+    width: 24px;
+}
+.intro{
+    background-color: blanchedalmond;
+}
+#nav-tab>li:hover{
+    background-color: #808080;
+    transition-delay: 0.1s;
+    transition-duration: 1s;
+}
+#footer{
+    min-height: 200px;
+    background-color: rgb(37, 41, 52);
+}
