@@ -59,10 +59,10 @@ INSERT INTO CATEGORIES(CAT_NAME,CAT_IMG,CAT_CONTENT) VALUES ('speak & spell','Ba
 INSERT INTO LESSON(INTRO_IMG,LESSON_CONTENT,LINK,CAT_ID) VALUES('Gramma/Gramma1.jpg','','',3);
 INSERT INTO LESSON(INTRO_IMG,LESSON_CONTENT,LINK,CAT_ID) VALUES('Gramma/Gramma2.jpg','','',3);
 INSERT INTO LESSON(INTRO_IMG,LESSON_CONTENT,LINK,CAT_ID) VALUES('Gramma/Gramma3.jpg','','',3);
-INSERT INTO LESSON(INTRO_IMG,LESSON_CONTENT,LINK,CAT_ID) VALUES('Listen/ListenIcon1.jpg','Listen to a song about a crazy house which is full of animals.','Listen/animal_house.mp4',1);
-INSERT INTO LESSON(INTRO_IMG,LESSON_CONTENT,LINK,CAT_ID) VALUES('Listen/ListenIcon2.jpg','','Listen/Baby_Shark.mp4',1);
-INSERT INTO LESSON(INTRO_IMG,LESSON_CONTENT,LINK,CAT_ID) VALUES('Listen/ListenIcon3.jpg','','Listen/The_alphabet_song.mp4',1);
-INSERT INTO LESSON(INTRO_IMG,LESSON_CONTENT,LINK,CAT_ID) VALUES('Listen/ListenIcon4.jpg','','Listen/Wheels_on_the_Bus .mp4',1);
+INSERT INTO LESSON(INTRO_IMG,LESSON_CONTENT,LINK,CAT_ID) VALUES('Listen/ListenIcon1.jpg','Listen to a song about a crazy house which is full of animals.','Video/animal_house.mp4',1);
+INSERT INTO LESSON(INTRO_IMG,LESSON_CONTENT,LINK,CAT_ID) VALUES('Listen/ListenIcon2.jpg','','Video/Baby_Shark.mp4',1);
+INSERT INTO LESSON(INTRO_IMG,LESSON_CONTENT,LINK,CAT_ID) VALUES('Listen/ListenIcon3.jpg','','Video/The_alphabet_song.mp4',1);
+INSERT INTO LESSON(INTRO_IMG,LESSON_CONTENT,LINK,CAT_ID) VALUES('Listen/ListenIcon4.jpg','','Video/Wheels_on_the_Bus .mp4',1);
 INSERT INTO LESSON(INTRO_IMG,LESSON_CONTENT,LINK,CAT_ID) VALUES('Read/Read1.jpg','','Read/Reading1.png',2);
 INSERT INTO LESSON(INTRO_IMG,LESSON_CONTENT,LINK,CAT_ID) VALUES('Read/Read2.jpg','','Read/Reading2.png',2);
 INSERT INTO LESSON(INTRO_IMG,LESSON_CONTENT,LINK,CAT_ID) VALUES('Read/Read3.jpg','','Read/Reading3.png',2);
@@ -70,11 +70,11 @@ INSERT INTO LESSON(INTRO_IMG,LESSON_CONTENT,LINK,CAT_ID) VALUES('Read/Read4.jpg'
 INSERT INTO LESSON(INTRO_IMG,LESSON_CONTENT,LINK,CAT_ID) VALUES('Write/Write1.jpg','','Write/Writing1.png',2);
 INSERT INTO LESSON(INTRO_IMG,LESSON_CONTENT,LINK,CAT_ID) VALUES('Write/Write2.jpg','','Write/Writing2.png',2);
 INSERT INTO LESSON(INTRO_IMG,LESSON_CONTENT,LINK,CAT_ID) VALUES('Write/Write3.jpg','','Write/Writing3.png',2);
-INSERT INTO LESSON(INTRO_IMG,LESSON_CONTENT,LINK,CAT_ID) VALUES('Vocabulary/Vocab1.jpg','Kids vocabulary - Sea Animals - Learn English for kids - English educational video','Vocabulary/VocabVid1.mp4',3);
-INSERT INTO LESSON(INTRO_IMG,LESSON_CONTENT,LINK,CAT_ID) VALUES('Vocabulary/Vocab2.jpg','Kids vocabulary - Baby Animals - Learn English for kids - English educational video','Vocabulary/VocabVid2.mp4',3);
-INSERT INTO LESSON(INTRO_IMG,LESSON_CONTENT,LINK,CAT_ID) VALUES('','','Speak/SpeakVid1.mp4',4);
-INSERT INTO LESSON(INTRO_IMG,LESSON_CONTENT,LINK,CAT_ID) VALUES('','','Speak/SpeakVid2.mp4',4);
-INSERT INTO LESSON(INTRO_IMG,LESSON_CONTENT,LINK,CAT_ID) VALUES('','','Spell/SpellVid1.mp4',4);
-INSERT INTO LESSON(INTRO_IMG,LESSON_CONTENT,LINK,CAT_ID) VALUES('','','Spell/SpellVid2.mp4',4);
+INSERT INTO LESSON(INTRO_IMG,LESSON_CONTENT,LINK,CAT_ID) VALUES('Vocabulary/Vocab1.jpg','Kids vocabulary - Sea Animals - Learn English for kids - English educational video','Video/VocabVid1.mp4',3);
+INSERT INTO LESSON(INTRO_IMG,LESSON_CONTENT,LINK,CAT_ID) VALUES('Vocabulary/Vocab2.jpg','Kids vocabulary - Baby Animals - Learn English for kids - English educational video','Video/VocabVid2.mp4',3);
+INSERT INTO LESSON(INTRO_IMG,LESSON_CONTENT,LINK,CAT_ID) VALUES('','','Video/SpeakVid1.mp4',4);
+INSERT INTO LESSON(INTRO_IMG,LESSON_CONTENT,LINK,CAT_ID) VALUES('','','Video/SpeakVid2.mp4',4);
+INSERT INTO LESSON(INTRO_IMG,LESSON_CONTENT,LINK,CAT_ID) VALUES('','','Video/SpellVid1.mp4',4);
+INSERT INTO LESSON(INTRO_IMG,LESSON_CONTENT,LINK,CAT_ID) VALUES('','','Video/SpellVid2.mp4',4);
 
 
