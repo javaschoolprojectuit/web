@@ -33,7 +33,7 @@ if (isSet($_SESSION['user'])) {
         <div class="row">
             <ul class="nav mr-auto col-12" id="nav-tab">
             <?php $id_name = get_id_name_categories(); ?>
-                <li class="nav-item active col-2">
+            <li class="nav-item active col-2">
                     <div class="row">
                         <img class="mx-auto my-auto d-block navicon-size" src="notebook.png">
                         <a class="col-9 nav-link my-auto text-white" href="./index.php">Home</a>
@@ -88,62 +88,54 @@ if (isSet($_SESSION['user'])) {
             </ul>
         </div>
     </nav>
+
+
     <br>
-    <div class="container intro">
-        <h1>Home</h1>
-        <div style="word-wrap:break-word;">
-        LearnEnglish Kids is brought to you by the UIT student team, the world's Technology experts. We have lots of free online games, songs, stories and activities for children. For parents, we have articles on supporting children in learning English, videos on using English at home and information about face-to-face courses around the world.
-        </div>
-    </div>
     <br>
     <div class="container">
-        <div class="row row-eq-height">
-            <div class="col-3 border border-light rounded overflow-auto d-flex flex-column">
-                <img class="d-block mx-auto img-fluid rounded" src="Banner/watch_listen.jpg">
-                <h1>LISTEN & WATCH</h1>
-                <br>
-                <div style="word-wrap:break-word;"><?php echo get_content_categories($id_name[0])?></div>
-                <button class="mt-auto btn btn-info">
-                    <h3>
-                        <?php echo '<a href="./view_tab.php?cat_id='.$id_name[0].'"> MORE --→ </a>' ?>
-                    </h3>
-                </button>
-            </div>
-            <div class="col-3 border border-light rounded d-flex flex-column">
-                <img class="d-block mx-auto img-fluid rounded" src="Banner/read_write.png">
-                <h1>READ & WRITE</h1>
-                <br>
-                <div style="word-wrap:break-word;">><?php echo get_content_categories($id_name[2])?> </div>
-                <button class="mt-auto btn btn-info">
-                    <h3>
-                        <?php echo '<a href="./view_tab.php?cat_id='.$id_name[2].'"> MORE --→ </a>' ?>
-                    </h3>
-                </button>
-            </div>
-            <div class="col-3 border border-light rounded d-flex flex-column">
-                <img class="d-block mx-auto img-fluid rounded" src="Banner/speak_spell.jpg">
-                <h1>SPEAK & SPELL</h1>
-                <br>
-                <div style="word-wrap:break-word;">><?php echo get_content_categories($id_name[4])?> </div>
-                <button class="mt-auto btn btn-info">
-                    <h3>
-                        <?php echo '<a href="./view_tab.php?cat_id='.$id_name[4].'"> MORE --→ </a>' ?>
-                    </h3>
-                </button>
-            </div>
-            <div class="col-3 border border-light rounded d-flex flex-column">
-                <img class="d-block mx-auto img-fluid rounded" src="Banner/grammar_vocabulary.jpg">
-                <h1>GRAMMAR & VOCAB</h1>
-                <br>
-                <div style="word-wrap:break-word;">><?php echo get_content_categories($id_name[6])?></div>
-                <button class="mt-auto btn btn-info">
-                    <h3>
-                        <?php echo '<a href="./view_tab.php?cat_id='.$id_name[6].'"> MORE --→ </a>' ?>
-                    </h3>
-                </button>
-            </div>
-        </div>
+    <div class="row row-eq-height">
+    <?php
+
+    if (check_connection() === true) {
+       $temp="MORE --→ ";
+       $sql    = 'SELECT * FROM LESSON WHERE LESSON_ID='.$_GET['LESSON_ID'].'';
+       $result = $GLOBALS['conn']->query($sql);
+
+       if ($result->num_rows > 0) {
+        while($row = $result->fetch_assoc()){
+            if ($row["CAT_ID"]==2)
+            {
+                echo '
+                <div class="col-3 border border-light rounded overflow-auto d-flex flex-column">
+                    <img width="1200" src="'.$row["LINK"].'">
+                    <br>
+                    <br>
+                </div>
+                        ';
+            }
+            else
+            {
+                echo '
+                <div class="col-3 border border-light rounded overflow-auto d-flex flex-column">
+                    <video width="1200" height="700" controls autoplay> 
+                    <source src="'.$row["LINK"].'" type="video/mp4">
+                    </video>
+                    <br>
+                    <br>
+                </div>
+                        ';
+            }
+        }
+       }
+        else {
+            echo "0 results";
+        }
+   }
+    ?>
     </div>
+    </div>
+   <br>
+
     <br>
     <br>
     <div class="container-fluid" id="footer">
