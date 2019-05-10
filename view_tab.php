@@ -127,7 +127,7 @@ if (isSet($_SESSION['user'])) {
                 <br>
                 <button class="mt-auto btn btn-info">
                     <h3>
-                    <a href="./view_lession.php?LESSON_ID='.$row["LESSON_ID"].'">'.$temp.'</a>
+                    <a href="./view_lession.php?CAT_ID='.$row["CAT_ID"].'&LESSON_ID='.$row["LESSON_ID"].'">'.$temp.'</a>
                     </h3>
                 </button>
                 <br>

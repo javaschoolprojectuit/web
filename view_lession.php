@@ -89,6 +89,22 @@ if (isSet($_SESSION['user'])) {
         </div>
     </nav>
 
+<br>
+   <?php
+   if (check_connection() === true) {
+       $sql    = 'SELECT * FROM CATEGORIES WHERE CAT_ID='.$_GET['CAT_ID'].'';
+       $result = $GLOBALS['conn']->query($sql);
+
+       if ($result->num_rows > 0) {
+        while($row = $result->fetch_assoc()){
+            echo '<div class = "container intro"><h1>'.$row["CAT_NAME"].'</h1><div style="word-wrap:brea-word;">'.$row["CAT_CONTENT"].'</div></div>';
+        }
+       }
+        else {
+            echo "0 results";
+        }
+   }
+   ?>
 
     <br>
     <br>
@@ -103,6 +119,14 @@ if (isSet($_SESSION['user'])) {
 
        if ($result->num_rows > 0) {
         while($row = $result->fetch_assoc()){
+            echo '
+            <div class = "container">
+            <h1>'.$row["LESSON_CONTENT"].'</h1></div>
+            <br>
+            <br>
+            <br>
+            ';
+
             if ($row["CAT_ID"]==2)
             {
                 echo '
