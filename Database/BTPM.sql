@@ -57,9 +57,9 @@ INSERT INTO CATEGORIES(CAT_NAME,CAT_IMG,CAT_CONTENT) VALUES ('speak & spell','Ba
 INSERT INTO CATEGORIES(CAT_NAME,CAT_IMG,CAT_CONTENT) VALUES ('gramma & vocabulary','Banner/gramma_vocabulary.jpg', 'Do you want to practise your English grammar and learn new words? In this section you can learn about grammar rules, play word games and watch fun videos. Watch the grammar videos, play the grammar games and print the grammar worksheets.');
 
 
-INSERT INTO LESSON(INTRO_IMG,LESSON_CONTENT,LINK,CAT_ID) VALUES('Gramma/Gramma1.jpg','','',4);
-INSERT INTO LESSON(INTRO_IMG,LESSON_CONTENT,LINK,CAT_ID) VALUES('Gramma/Gramma2.jpg','','',4);
-INSERT INTO LESSON(INTRO_IMG,LESSON_CONTENT,LINK,CAT_ID) VALUES('Gramma/Gramma3.jpg','','',4);
+INSERT INTO LESSON(INTRO_IMG,LESSON_CONTENT,LINK,CAT_ID) VALUES('Gramma/Gramma1.jpg','Present Simple Tense','Video/GrammarVid1.mp4',4);
+INSERT INTO LESSON(INTRO_IMG,LESSON_CONTENT,LINK,CAT_ID) VALUES('Gramma/Gramma2.jpg','Present Continuous Tense','Video/GrammarVid2.mp4',4);
+INSERT INTO LESSON(INTRO_IMG,LESSON_CONTENT,LINK,CAT_ID) VALUES('Gramma/Gramma3.jpg','Nouns Countable And Uncountable','Video/GrammarVid3.mp4',4);
 INSERT INTO LESSON(INTRO_IMG,LESSON_CONTENT,LINK,CAT_ID) VALUES('Listen/ListenIcon1.jpg','Animal House','Video/animal_house.mp4',1);
 INSERT INTO LESSON(INTRO_IMG,LESSON_CONTENT,LINK,CAT_ID) VALUES('Listen/ListenIcon2.jpg','Baby Shark','Video/Baby_Shark.mp4',1);
 INSERT INTO LESSON(INTRO_IMG,LESSON_CONTENT,LINK,CAT_ID) VALUES('Listen/ListenIcon3.jpg','The alphabet song','Video/The_alphabet_song.mp4',1);
